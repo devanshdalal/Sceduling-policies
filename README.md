@@ -1,9 +1,4 @@
----
-authors:
-- Nishant Kumar
-- Devansh Dalal
-title: 'Scheduling policies for Baadal - the IITD cloud'
-...
+### Scheduling Policies
 
 Baadal is the IIT Delhi academic cloud on which Virtual Machines (VMs)
 are run. Currently it is using the first fit strategy for scheduling the
@@ -23,7 +18,7 @@ total RAM.
 When the user changes the level of a VM and restarts it, it is placed
 again in a new host following the same strategy as above.
 
-improvements
+Improvements
 ============
 
 1.  <span> It can be proven that online first fit for 2-dimentional
@@ -72,3 +67,15 @@ Analysis
     request to decrease the rejected requests during the simulation. The
     number of requests rejected for a list of 10,000 request were only
     370 as compared to 665 without migration. </span>
+
+---
+authors:
+- Nishant Kumar
+- Devansh Dalal <br>
+title: 'Scheduling policies for Baadal - the IITD cloud'
+...
+
+## Credits
+----------------
+[Devansh Dalal](https://github.com/devanshdalal) <br>
+[Nishant Kumar](https://github.com/nish_kr) <br>
