@@ -1,4 +1,4 @@
-### Scheduling Policies
+Scheduling Policies
 ==============================
 
 Baadal is the IIT Delhi academic cloud on which Virtual Machines (VMs)
@@ -7,7 +7,7 @@ VMs on the Physical Machines (PMs). Our current work focusses on
 improving the scheduling capacity for Baadal. We then provide analysis
 of a simulation we used in evaluating the different strategies.
 
-Currently implemented Strategy
+### Currently implemented Strategy
 ==============================
 
 When a new request for a Virtual Machine comes in, it has associated
@@ -19,7 +19,7 @@ total RAM.
 When the user changes the level of a VM and restarts it, it is placed
 again in a new host following the same strategy as above.
 
-Improvements
+### Improvements
 ============
 
 1.  <span> It can be proven that online first fit for 2-dimentional
