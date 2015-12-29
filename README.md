@@ -69,7 +69,8 @@ Analysis
     number of requests rejected for a list of 10,000 request were only
     370 as compared to 665 without migration. </span>
 
----
+
+------
 Title: 'Scheduling policies for Baadal - the IITD cloud'
 Authors:
 - Nishant Kumar
