@@ -9,7 +9,6 @@ of a simulation we used in evaluating the different strategies.
 
 ### Currently implemented Strategy
 ==============================
-
 When a new request for a Virtual Machine comes in, it has associated
 with it the parameters - CPU (cores needed) and RAM. It is then placed
 using the First Fit strategy in the first host that meets the
@@ -21,7 +20,6 @@ again in a new host following the same strategy as above.
 
 ### Improvements
 ============
-
 1.  <span> It can be proven that online first fit for 2-dimentional
     packing is O(d)-competitive and will not use more than 2.7 times the
     optimal number of bins packed offline. @Garey1976 </span>
@@ -44,7 +42,6 @@ again in a new host following the same strategy as above.
 
 Analysis
 ========
-
 -   <span>For comparing various strategies we generate a list of queries
     for the simulation, where a query can be a request for a new Vm ,
     change the level of any existing Vm or delete a Vm while maintaining
