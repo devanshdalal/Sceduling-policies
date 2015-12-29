@@ -1,4 +1,4 @@
-Scheduling Policies
+### Scheduling Policies
 ==============================
 
 Baadal is the IIT Delhi academic cloud on which Virtual Machines (VMs)
