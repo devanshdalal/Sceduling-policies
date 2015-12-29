@@ -80,3 +80,13 @@ Authors:
 ----------------
 [Devansh Dalal](https://github.com/devanshdalal) <br>
 [Nishant Kumar](https://github.com/nish_kr) <br>
+
+
+### Screenshots
+----------------
+![s](https://cloud.githubusercontent.com/assets/5080310/13222407/c69910f6-d9a5-11e5-902a-1195cfb6ab62.png)
+----------------
+![s](https://cloud.githubusercontent.com/assets/5080310/13222411/c6b9594c-d9a5-11e5-959b-8f9b481f4843.png)
+----------------
+![s](https://cloud.githubusercontent.com/assets/5080310/13222393/c6322616-d9a5-11e5-8c78-a9d68114ca9a.jpg)
+----------------
