@@ -58,11 +58,11 @@ Analysis
 -   The average number of hosts used by each policy are ploted in the
     graph shown below.
 
-    ![Simulation Results]()
+<!--     ![Simulation Results]()
 
 -   ![Initial State of Vms and Hosts](h1)
 
-    ![Host 51 shut down and its Vms migrated to other hosts](h2)
+    ![Host 51 shut down and its Vms migrated to other hosts](h2) -->
 
 -   <span> We have also used migration if first fit fails to schedule a
     request to decrease the rejected requests during the simulation. The
