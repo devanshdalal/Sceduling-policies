@@ -58,7 +58,7 @@ Analysis
 -   The average number of hosts used by each policy are ploted in the
     graph shown below.
 
-    ![Simulation Results](7)
+    ![Simulation Results]()
 
 -   ![Initial State of Vms and Hosts](h1)
 
@@ -70,10 +70,10 @@ Analysis
     370 as compared to 665 without migration. </span>
 
 ---
-authors:
+Title: 'Scheduling policies for Baadal - the IITD cloud'
+Authors:
 - Nishant Kumar
 - Devansh Dalal <br>
-title: 'Scheduling policies for Baadal - the IITD cloud'
 ...
 
 ## Credits
