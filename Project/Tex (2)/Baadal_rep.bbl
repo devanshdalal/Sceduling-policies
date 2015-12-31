@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{energyaware}
+Samrajesh~M.D. Al~Shayeji~M.H.
+\newblock An energy aware virtual machine placement algorithm.
+\newblock pages 242--246. IEEE, 2012.
+
+\bibitem{Anton1}
+Anton Beloglazov and Rajkumar Buyya.
+\newblock Optimal online deterministic algorithms and adaptive heuristics for
+  energy and performance efficient dynamic consolidation of virtual machines in
+  cloud data centers.
+\newblock {\em Concurrency and Computation: Practice and Experience},
+  24:1397--1420, 2012.
+
+\bibitem{openstack}
+Hong~Yu Bin~Hu.
+\newblock Research of scheduling strategy on openstack.
+\newblock pages 191--196. IEEE, 2013.
+
+\bibitem{Garey1976}
+DS~Johnson A.C.C.~Yao MR~Garey, RL~Graham.
+\newblock Resource constrained scheduling as generalized bin packing.
+\newblock {\em Journal of Combinatorial Theory}, pages 257--298, 1976.
+
+\bibitem{Rani2011}
+Rina Panigrahy, Kunal Talwar, Lincoln Uyeda, and Udi Wieder.
+\newblock Heuristics for vector bin packing.
+\newblock Microsoft Research, 2011.
+
+\bibitem{iitb}
+Anjana Shankar.
+\newblock Virtual machine placement in computing clouds, 2010.
+
+\bibitem{binpacknote}
+Subhash Suri.
+\newblock Bin packing algorithms.
+\newblock University of California.
+
+\bibitem{tightbounds}
+Seny Kamara Bruce~Shepherd Yossi~Azar, Ilan~Cohen.
+\newblock Tight bounds for online vector bin packing.
+\newblock ACM , New York, 2013.
+
+\end{thebibliography}

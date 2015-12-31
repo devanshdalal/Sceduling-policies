@@ -1,0 +1,30 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+% Title Page
+\title{Scheduling policies for Baadal - the IITD cloud}
+\author{Nishant Kumar \and Devansh Dalal }
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Baadal is the IIT Delhi academic cloud on which Virtual Machines (VMs) are run. Currently it is using the first fit strategy for scheduling the VMs on the Physical Machines (PMs). Our current work focusses on improving the scheduling capacity for Baadal. We then provide analysis of a simulation we used in evaluating the different strategies.
+\end{abstract}
+
+\section{Currently implemented Strategy}
+
+When a new request for a Virtual Machine comes in, it has associated with it the parameters - CPU (cores needed) and RAM. It is then placed using the First Fit strategy in the first host that meets the requirements of the new VM, after sorting the hosts in the order of total RAM.
+
+When the user changes the level of a VM and restarts it, it is placed again in a new host following the  same strategy as above. 
+
+\section{Our improvements}
+
+
+
+\section{Analysis}
+fasdfads
+\nocite{*}
+
+\bibliographystyle{plain}
+\bibliography{Baadal_rep}
+\end{document}          

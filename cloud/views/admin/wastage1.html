@@ -1,0 +1,61 @@
+{{extend 'layout.html'}}
+<style>
+  td { border: 1px solid black; width: 50px; text-align: center; margin:0; padding:0 }
+  #span1 { width: 25px; float: right; }
+  #span2 { width: 24px; float: left; }
+  .t { border-top: 1px; }
+  .r { border-right: 1px; height: 100%; }
+</style>
+<h3>Resource wastage statistics</h3>
+{{if not data:}}
+    <center> No data available for vms</center>
+{{else:}}
+<script type="text/Javascript">
+function load(url,event)
+{
+	location.href=url;
+}
+</script>
+<div>
+<p>Sorted by: {{=sortedby}}</p>
+<!--ul align="right">
+	<li></li>
+</ul-->
+</div>
+
+  <table>
+     <tr>
+        <th><a href='{{=URL('wastage/vm/')}}'>VM Name</a></th>
+        <th><a href='{{=URL('wastage/hcpu/')}}'>hCPU</a> | <a href='{{=URL('wastage/hram/')}}'>hRAM</a> (5 Hours)</th>
+        <th><a href='{{=URL('wastage/dcpu/')}}'>dCPU</a> | <a href='{{=URL('wastage/dram/')}}'>dRAM</a> (1 Day)</th>
+        <th><a href='{{=URL('wastage/wcpu/')}}'>wCPU</a> | <a href='{{=URL('wastage/wram/')}}'>wRAM</a> (1 Week)</th>
+     </tr>
+      {{for vm in data:}}
+	    <tr>
+         {{if(vm[sortedby]>75):}}<td style='background-color:Cyan'>
+         {{else:}}
+	     {{if(vm[sortedby]>25):}}<td style='background-color:YellowGreen'>
+	     {{else:}}<td style='background-color:LightSalmon'>
+	     {{pass}}
+         {{pass}}
+            {{=vm['vm']}}</td>
+	    <td>CPU: {{=vm['hcpu']}} | RAM: {{=vm['hram']}}</td>
+	    <td>CPU: {{=vm['dcpu']}} | RAM: {{=vm['dram']}}</td>
+	    <td>CPU: {{=vm['wcpu']}} | RAM: {{=vm['wram']}}</td>
+      </tr>	
+      {{pass}}
+    </table>
+{{pass}}
+{{if not error:}}
+	<center> All vms are running fine. No errors</center>
+{{else:}}
+	<table>
+	  <tr>
+		<th> VM Name</th>
+		<th> Error</th>
+	  </tr>
+	 {{for vm in error:}}
+	   <tr><td>{{=vm['vm']}}</td><td>{{=vm['error']}}</td></tr>
+	 {{pass}}
+	</table>
+{{pass}}

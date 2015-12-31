@@ -1,0 +1,22 @@
+2013-08-10 23:52:59.739: starting up
+LC_ALL=C PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin QEMU_AUDIO_DRV=none /usr/bin/kvm -S -M pc-1.0 -enable-kvm -m 1024 -smp 1,sockets=1,cores=1,threads=1 -name arun_statphys_1 -uuid 808353d8-7503-3177-859b-5c5e9fe5e3a9 -nodefconfig -nodefaults -chardev socket,id=charmonitor,path=/var/lib/libvirt/qemu/arun_statphys_1.monitor,server,nowait -mon chardev=charmonitor,id=monitor,mode=readline -rtc base=utc -boot c -drive file=/vms/ds_kvm2/arun_statphys_1/arun_statphys_1.qcow2,if=none,id=drive-virtio-disk0,boot=on,format=raw -device virtio-blk-pci,bus=pci.0,addr=0x4,drive=drive-virtio-disk0,id=virtio-disk0 -netdev tap,fd=17,id=hostnet0,vhost=on,vhostfd=21 -device virtio-net-pci,netdev=hostnet0,id=net0,mac=54:52:00:00:06:03,bus=pci.0,addr=0x3 -chardev pty,id=charserial0 -device isa-serial,chardev=charserial0,id=serial0 -usb -vnc 0.0.0.0:623 -vga cirrus -device virtio-balloon-pci,id=balloon0,bus=pci.0,addr=0x5
+Supported machines are:
+pc         Standard PC (alias of pc-0.14)
+pc-0.14    Standard PC (default)
+pc-0.13    Standard PC
+pc-0.12    Standard PC
+pc-0.11    Standard PC, qemu 0.11
+pc-0.10    Standard PC, qemu 0.10
+isapc      ISA-only PC
+2013-08-10 23:53:00.040: shutting down
+2013-08-11 00:02:08.809: starting up
+LC_ALL=C PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin QEMU_AUDIO_DRV=none /usr/bin/kvm -S -M pc-1.0 -enable-kvm -m 1024 -smp 1,sockets=1,cores=1,threads=1 -name arun_statphys_1 -uuid 808353d8-7503-3177-859b-5c5e9fe5e3a9 -nodefconfig -nodefaults -chardev socket,id=charmonitor,path=/var/lib/libvirt/qemu/arun_statphys_1.monitor,server,nowait -mon chardev=charmonitor,id=monitor,mode=readline -rtc base=utc -boot c -drive file=/vms/ds_kvm2/arun_statphys_1/arun_statphys_1.qcow2,if=none,id=drive-virtio-disk0,boot=on,format=raw -device virtio-blk-pci,bus=pci.0,addr=0x4,drive=drive-virtio-disk0,id=virtio-disk0 -netdev tap,fd=17,id=hostnet0,vhost=on,vhostfd=21 -device virtio-net-pci,netdev=hostnet0,id=net0,mac=54:52:00:00:06:03,bus=pci.0,addr=0x3 -chardev pty,id=charserial0 -device isa-serial,chardev=charserial0,id=serial0 -usb -vnc 0.0.0.0:623 -vga cirrus -device virtio-balloon-pci,id=balloon0,bus=pci.0,addr=0x5
+Supported machines are:
+pc         Standard PC (alias of pc-0.14)
+pc-0.14    Standard PC (default)
+pc-0.13    Standard PC
+pc-0.12    Standard PC
+pc-0.11    Standard PC, qemu 0.11
+pc-0.10    Standard PC, qemu 0.10
+isapc      ISA-only PC
+2013-08-11 00:02:09.111: shutting down

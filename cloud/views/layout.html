@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+
+    <title>{{=response.title or request.application}}</title>
+    
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="author" content="Erwin Aligam - styleshout.com" />
+<meta name="description" content="Site Description Here" />
+<meta name="keywords" content="keywords, here" />
+<meta name="robots" content="index, follow, noarchive" />
+<meta name="googlebot" content="noarchive" />
+<link rel="stylesheet" type="text/css" media="screen" href="{{=URL(r=request,c='static',f='css/screen.css')}}" />
+<script type="text/javascript">
+    function showElement(layer){
+        var myLayer = document.getElementById(layer);
+        if(myLayer.style.display=="none")
+        {
+            myLayer.style.display="block";
+            myLayer.backgroundPosition="top";
+        }
+        else
+        {
+            myLayer.style.display="none";
+        }
+    }
+</script>
+
+    {{#------  require CSS and JS files for this page (read info in base.css) ------}}
+    {{#------ include web2py specific js code (jquery, calendar, form stuff) ------}}
+    {{include 'web2py_ajax.html'}}
+
+    {{
+    #using sidebars need to know what sidebar you want to use
+    #prior of using it, because of static width size of content, you can use
+    #left_sidebar, right_sidebar, both or none (False left and right)    
+    left_sidebar_enabled = globals().get('left_sidebar_enabled',False)
+    right_sidebar_enabled = globals().get('right_sidebar_enabled',False)
+    if left_sidebar_enabled and right_sidebar_enabled: width_content='63%'
+    elif left_sidebar_enabled != right_sidebar_enabled: width_content='740px'
+    else: width_content='100%'
+    if left_sidebar_enabled: left_sidebar_style = 'style="display: block;"'
+    else: left_sidebar_style = 'style="display: none;"'
+    if right_sidebar_enabled: right_sidebar_style = 'style="display: block;"'
+    else: right_sidebar_style = 'style="display: none;"'
+    style_content = 'style="width: %s"' % width_content
+    }}
+</head>
+
+<!--header -->
+<div id="header-wrap"><div id="header">
+      {{block header}} <!-- this is default header -->
+      <div id="logo"><!-- put your logo here --></div>
+      <div style="clear: both;"></div><!-- Clear the divs -->
+      {{end}}                                     
+    <a name="top"></a>
+
+    <h1 id="logo-text"><a href="{{=URL(request.application,'default','index')}}" title="">Baadal</a></h1>
+    <p id="slogan">Powering IITD cloud</p>
+
+    <div  id="nav">
+        <ul>
+            <li id="current"><a href="{{=URL(request.application,'default','index')}}">Home</a></li>
+            <li><a href="{{=URL(request.application,'default','about')}}">About</a></li>
+            <li><a href="{{=URL(request.application,'default','documentation')}}">Documentation</a></li>
+        </ul>
+    </div>
+
+    <div id="welcome">
+    <p class="bottom-right">
+    {{try:}}{{=auth.navbar(prefix=T('Welcome'),action=URL('default','user'))}}{{except:pass}}
+   </p>
+    </div>
+<!--
+   <form id="quick-search" method="get" action="index.html">
+      <fieldset class="search">
+         <label for="qsearch">Search:</label>
+         <input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
+         <button class="btn" title="Submit Search">Search</button>
+      </fieldset>
+   </form>
+-->
+<!--/header-->
+</div></div>
+
+
+<body>
+<!--
+<ul id="menu">
+<li><a href="#" title="">Home</a></li>
+<li><a href="#" title="" class="current">Products</a></li>
+<li><a href="#" title="">Home</a></li>
+<li><a href="#" title="" class="current">Products</a></li>
+<li><a href="#" title="">Home</a></li>
+<li><a href="#" title="" class="current">Products</a></li>
+</ul>
+-->
+
+<!-- content-outer -->
+<div id="content-wrap" class="clear" >
+
+    <!-- content -->
+   <div id="content">
+
+    <!-- main -->
+       <div id="main">
+
+    <div id="container">                        
+      
+      <div id="wrapper">            
+    <!--div id="statusbar"><!-- statusbar is menu zone -->
+      {{block statusbar}} <!-- this is default statusbar -->
+      {{#------ superfish menu ------}}
+      {{=MENU(response.menu,_class='sf-menu')}}
+      <script type="text/javascript">
+        jQuery(document).ready(function(){
+        jQuery('ul.sf-menu').superfish();});
+      </script>
+      <div style="clear: both;"></div><!-- Clear the divs -->   
+      {{end}}               
+    </div--><!-- statusbar -->
+    
+    <div id="page"> <!-- Here my central body -->     
+
+      {{if left_sidebar_enabled:}}
+          <div id="left_sidebar" {{=XML(left_sidebar_style)}} >
+            <div style="padding: 4px;">
+          {{block left_sidebar}}Content Left Sidebar{{end}}       
+            </div>
+          </div><!-- left_sidebar -->
+      {{pass}}
+
+      <!-- content -->
+      <div id="content" {{=XML(style_content)}} >
+      	{{if ( msg != "" ):}}
+	    <div>
+	    <h3>Message Box</h3>
+	    <p class="message">{{=msg}}</p>
+	    </div>
+	    {{pass}}
+
+        {{if response.flash:}}<div class="flash">{{=response.flash}}</div>{{pass}}     
+	{{include}} 
+      </div>
+      <!-- content -->
+
+      {{if right_sidebar_enabled:}}
+          <div id="right_sidebar" {{=XML(right_sidebar_style)}} >
+            <div style="padding: 4px;">
+              {{block right_sidebar}}Content Right Sidebar{{end}}
+            </div>
+      </div><!-- right_sidebar -->
+          {{pass}}
+
+
+      <div style="clear: both;"></div><!-- Clear the divs -->
+      
+    </div><!-- page -->                         
+    
+    <div id="footer">
+      {{block footer}} <!-- this is default footer -->
+
+    </div><!-- footer -->           
+      </div><!-- wrapper -->
+    </div><!-- container -->        
+        <!-- /main -->
+        </div>
+
+      <!-- sidebar -->
+        <div id="sidebar">
+
+
+            <div class="sidemenu">
+	    {{  
+        	if auth.is_logged_in(): 
+        	if ifModerator(auth.user.username):
+            }}
+ 	    <ul>
+		<li><center>
+			<a href="{{=URL(request.application,'admin','switch_role')}}">Switch Role</a>
+		</center></li>
+	    </ul>
+	    {{pass}}
+	    {{pass}}
+
+                <ul>
+	{{if ((not auth.is_logged_in()) or (auth.is_logged_in() and (not isModerator(auth.user.username)))):}}
+                   <li><a href="{{=URL(request.application,'default','index')}}">Home</a></li>
+                   <li><a href="{{=URL(request.application,'default','request_vm_template')}}">Request VM</a></li>
+    <li>{{=A('Mail Admins',_href=URL(r=request,c='admin',f='mailToGUI',args=["cloudgroup"," ","Replace the content with your subject body. DO WRITE YOUR VM NAME IF YOU ARE QUERING FOR THE SAME"]))}}</li>
+        {{if auth.is_logged_in():
+        if not isModerator(auth.user.username):
+        num=db(db.request.userid == auth.user_id).count()
+        }}
+                    <li><a href="{{=URL(request.application,'vmuser','list')}}">List my VMs</a></li>
+                    <li><a href="{{=URL(request.application,'admin','get_requests')}}">Pending requests</a> {<sup>{{=num}}</sup>}</li>
+                    <li><a href="{{=URL(request.application,'vmuser','queue')}}">Tasks</a></li>
+        {{else:}}
+               <li><a href="{{=URL(request.application,'vmuser','queue')}}">My Tasks</a></li>
+    {{pass}}
+    {{pass}}
+    {{pass}}
+
+    {{if auth.is_logged_in():
+        if isModerator(auth.user.username):
+        num=db(db.request.status == 1).count()
+    }}
+                <center><h3>Admin Menu</h3></center>
+                    <!--<li>
+                    <a href="#" class="button" onclick="javascript:showElement('list-menu')">
+                    <span>LIST VMs</span>
+                    </a>
+                    <ul id="list-menu" style="display:none;"> -->
+                    <li><a href="{{=URL(request.application,'vmuser','list_all')}}">All VMs</a></li>
+                    <li><a href="{{=URL(request.application,'vmuser','list_hosts')}}">Host and VMs</a></li>
+                    <!--
+                    </ul>
+                    </li>
+                    -->
+                    <li><a href="{{=URL(request.application,'admin','get_requests')}}">Pending requests</a> {<sup>{{=num}}</sup>}</li>
+                    <!--li><a href="{{=URL(request.application,'default','request_vm_manual')}}">Create Template</a></li-->
+                    <li><a href="{{=URL(request.application,'admin','queue')}}">Tasks</a></li>
+                    <li><a href="{{=URL(request.application,'admin','get_errors')}}">Errors</a><sup style="color:red"> new</sup></li>
+                    <li><a href="{{=URL(request.application,'admin','wastage')}}">Wastage</a><sup style="color:red"> new</sup></li>
+                    <li><a href="{{=URL(request.application,'admin','mailToAll')}}">Email To All</a></li>
+                    <a href="#" class="button" onclick="javascript:showElement('config-menu')">
+                    <li>
+                    <span>CONFIGURATION</span>
+                    </a>
+                    <ul id="config-menu" style="display:none;">
+                    <li><a href="{{=URL(request.application,'admin','machine_details')}}">Add host</a></li>
+                    <li><a href="{{=URL(request.application,'admin','attach_disk')}}">Attach Disk</a></li>
+                    <li><a href="{{=URL(request.application,'admin','add_template')}}">Add template</a></li>
+                    <li><a href="{{=URL(request.application,'admin','add_isofile')}}">Add ISO image</a></li>
+                    <li><a href="{{=URL(request.application,'admin','add_datastore')}}">Add Datastore</a></li>
+                    <li><a href="{{=URL(request.application,'admin','check_sanity')}}">Sanity Check</a></li>
+                    {{if getconstant("ifbaadaldown")=="0":}}
+                        <li><a href="{{=URL(request.application,'admin','turnoffbaadal')}}">Turn Off Baadal</a></li>
+                    {{else:}}
+                        <li><a href="{{=URL(request.application,'admin','turnonbaadal')}}">Turn On Baadal</a></li>
+                    {{pass}}
+                    </ul>
+                    </li>
+{{pass}}
+{{pass}}
+ 
+    {{if auth.is_logged_in():
+        if isFaculty(auth.user.username):}}
+    <li><a href="{{=URL(request.application,'admin','add_user_vm')}}">Add User to Virtual Machine</a></li>
+    {{pass}}
+    {{pass}}
+
+            </ul>
+            </div>
+	{{if ( help_text != "" ):}}
+	<div>
+	<h3>Help</h3>
+	<p class="help">{{=help_text}}</p>
+	</div>
+	{{pass}}
+	<div id="extra-info">
+	</div>
+        <div class="about-me">
+
+            <h3>About Baadal</h3>
+              <p>
+                A project carried out by <a href=http://www.cse.iitd.ernet.in/~cs1090174>Abhishek Gupta</a>, <a href=http://www.cse.iitd.ernet.in/~cs5090243>Jatin Kumar</a> and <a href=http://www.cse.iitd.ernet.in/~mcs112576>Daniel J Mathew</a> under the supervision of <a href=http://www.cse.iitd.ernet.in/~sbansal>Sorav Bansal</a>, <a href=http://www.cse.iitd.ernet.in/~suban>Subhashis Banerjee</a> and the CSC cloud team, IIT Delhi.
+              </p>
+
+         </div>
+      <!-- /sidebar -->
+        </div>
+
+    <!-- content -->
+    </div>
+
+<!-- /content-out -->
+</div>
+
+<!-- footer-bottom -->
+<div id="footer-bottom">
+
+    <p align="center">
+      {{=T('Copyright')}} &#169; 2011 &nbsp; | &nbsp; Indian Institute of Technology Delhi
+    </p>
+
+<!-- /footer-bottom-->
+</div>
+<!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references--> 
+<!-- <link rel="shortcut icon" href="{{=URL(r=request,c='static/images',f='favicon.ico')}}" type="image/x-icon"> -->
+<!--    <link rel="apple-touch-icon" href="{{=URL(r=request,c='static',f='favicon.png')}}">
+-->
+    <!-- For the less-enabled mobile browsers like Opera Mini -->
+    <link rel="stylesheet" media="handheld" href="{{=URL(r=request,c='static',f='css/handheld.css')}}">
+    
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+    <script src="{{=URL(r=request,c='static',f='js/modernizr-1.6.min.js')}}"></script>
+  </head>
+  
+  <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->  
+  <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+    <div class="flash">{{=response.flash or ''}}</div> <!-- notification div -->
+  </body>
+</html>

@@ -1,0 +1,43 @@
+{{extend 'layout.html'}}
+<!--
+<script>
+jQuery(document).ready(function(){
+   jQuery('#deleteIcon').attr('onclick',
+     confirm(
+        "{{=T('Sure you want to delete this object?')}}")
+      );
+</script>
+-->
+{{if not snapshots:}}
+  <center>No VM running</center>
+{{else:}}
+  <table>
+      <tr>
+        <th>Name</th>
+        <th>Parent</th>
+        <th>Status of VM</th>
+        <!--<th>Time Created</th>-->
+        <th>Commands</th>
+      </tr>
+      {{for snap in snapshots:
+	}}
+      <tr>
+        <td>{{=snap['name']}}</td>
+        <td>{{=snap['parent']}}</td>
+        <td>{{=snap['status']}}</td>
+        <!--<td>{{=snap['time']}}</td>-->
+        <td>
+        
+          {{=A(IMG(_src=URL('static','images/revert_icon.png'), _height=15, _width=15),
+                _href=URL(r=request, f='revert_to_snapshot', args=snap['name']), 
+                _title="Revert to the snapshot", 
+                _alt="Revert to the snapshot")}}
+
+          {{if (snap['canDelete'] == True) :}}
+	       <a href="#" onClick="if(confirm('Are you sure you want to delete it')) window.location ='{{=URL(r=request, f='delete_snapshot', args=snap['name'])}}'">{{=IMG(_src=URL('static','images/delete.png'), _height=15, _width=15)}}</a>
+   {{pass}}
+          </td>
+      </tr>
+      {{pass}}
+{{pass}}
+</table>

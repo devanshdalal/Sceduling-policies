@@ -1,0 +1,29 @@
+#Calculates the wastage of CPU,RAM by all the vms
+def wastagecompu():
+    import commands
+    try:
+        vms=db(db.vm.hostid==host.id).select()
+        for vm in vms:
+            out1=commands.getstatusoutput("/usr/bin/rrdtool fetch -r 300 -s -24h /var/www/cloudrrd1/"+vm.name+".rrd AVERAGE| /bin/grep -v nan | /bin/grep -v cpu | /bin/grep -v \"^\$\" | /usr/bin/awk -f /var/www/mail.pl |grep -v NR| sed 's/\([^0-9./]\+\)/ /g' | sed 's/\/\([ ]\+\)/\//g'")
+            out2=commands.getstatusoutput("/usr/bin/rrdtool fetch -r 300 -s -168h /var/www/cloudrrd1/"+vm.name+".rrd AVERAGE| /bin/grep -v nan | /bin/grep -v cpu | /bin/grep -v \"^\$\" | /usr/bin/awk -f /var/www/mail.pl |grep -v NR| sed 's/\([^0-9./]\+\)/ /g' | sed 's/\/\([ ]\+\)/\//g'")
+            out3=commands.getstatusoutput("/usr/bin/rrdtool fetch -r 18000 -s -720h /var/www/cloudrrd1/"+vm.name+".rrd AVERAGE| /bin/grep -v nan | /bin/grep -v cpu | /bin/grep -v \"^\$\" | /usr/bin/awk -f /var/www/mail.pl |grep -v NR| sed 's/\([^0-9./]\+\)/ /g' | sed 's/\/\([ ]\+\)/\//g'")
+            out4=commands.getstatusoutput("/usr/bin/rrdtool fetch -r 108000 -s -8640h /var/www/cloudrrd1/"+vm.name+".rrd AVERAGE| /bin/grep -v nan | /bin/grep -v cpu | /bin/grep -v \"^\$\" | /usr/bin/awk -f /var/www/mail.pl |grep -v NR| sed 's/\([^0-9./]\+\)/ /g' | sed 's/\/\([ ]\+\)/\//g'")
+            (hcpu,hram,dcpu,dram,wcpu,wram)=(0,0,0,0,0,0)
+            if(out1[1].find('ERROR')>=0 or out1[1].find('fatal')>=0):errorlist.append({'vm':vm.name,'error':out1[1]})
+            elif out1[1].strip()=="":(hcpu,hram)=(0,0)
+            else:(hcpu,hram)=(100-float(out1[1].split()[0]),100-float(out1[1].split()[2]))
+
+            if(out2[1].find('ERROR')>=0 or out2[1].find('fatal')>=0):errorlist.append({'vm':vm.name,'error':out2[1]})
+            elif out2[1].strip()=="":(dcpu,dram)=(0,0)
+            else:(dcpu,dram)=(100-float(out2[1].split()[0]),100-float(out2[1].split()[2]))
+
+            if(out3[1].find('ERROR')>=0 or out3[1].find('fatal')>=0):errorlist.append({'vm':vm.name,'error':out3[1]})
+            elif out3[1].strip()=="":(wcpu,wram)=(0,0)
+            else:(wcpu,wram)=(100-float(out3[1].split()[0]),100-float(out3[1].split()[2]))
+
+    except:
+        import sys, traceback
+        etype, value, tb = sys.exc_info()
+        msg = ''.join(traceback.format_exception(etype, value, tb, 10))
+        print "Some Error Occured\n"+msg
+    return

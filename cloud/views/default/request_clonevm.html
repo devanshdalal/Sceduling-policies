@@ -1,0 +1,7 @@
+{{extend 'layout.html'}}
+<h3>Request to create a new vm from {{=vmname}}</h3>
+<div style="color:#F00">
+<p>Make sure your VM is powered Off</p>
+<p>If your are cloning a Linux machine, delete '/etc/udev/rules.d/70-persistent-net.rules' file </p>
+</div>
+{{=form}}

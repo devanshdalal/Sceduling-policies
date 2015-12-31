@@ -1,0 +1,4 @@
+2011-11-04 15:15:33.090: starting up
+LC_ALL=C PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin /usr/bin/kvm -S -M pc-0.14 -cpu qemu32 -enable-kvm -m 512 -smp 1,sockets=1,cores=1,threads=1 -name abhishek2 -uuid 93d588c9-e2e9-2ebe-69e9-2f4d9b9df99b -nographic -nodefconfig -nodefaults -chardev socket,id=charmonitor,path=/var/lib/libvirt/qemu/abhishek2.monitor,server,nowait -mon chardev=charmonitor,id=monitor,mode=readline -rtc base=utc -boot c -drive file=/vms/abhishek2/abhishek2.qcow2,if=none,id=drive-ide0-0-0,format=raw -device ide-drive,bus=ide.0,unit=0,drive=drive-ide0-0-0,id=ide0-0-0 -netdev tap,fd=19,id=hostnet0 -device rtl8139,netdev=hostnet0,id=net0,mac=52:54:00:3f:7d:7e,bus=pci.0,addr=0x2 -chardev pty,id=charserial0 -device isa-serial,chardev=charserial0,id=serial0 -usb -incoming tcp:0.0.0.0:48160 -device virtio-balloon-pci,id=balloon0,bus=pci.0,addr=0x3
+char device redirected to /dev/pts/1
+2011-11-04 19:11:29.814: shutting down

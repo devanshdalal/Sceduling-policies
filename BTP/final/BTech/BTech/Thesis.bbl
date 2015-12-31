@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bailey}
+D.~H. Bailey and P.~N. Swarztrauber.
+\newblock The fractional {F}ourier transform and applications.
+\newblock {\em SIAM Rev.}, 33(3):389--404, 1991.
+
+\bibitem{Bay1}
+A.~Bayliss, C.~I. Goldstein, and E.~Turkel.
+\newblock An iterative method for the {H}elmholtz equation.
+\newblock {\em J. Comp. Phys.}, 49:443--457, 1983.
+
+\bibitem{Ernst}
+O.~Ernst and G.~Golub.
+\newblock A domain decomposition approach to solving the {H}elmholtz equation
+  with a radiation boundary condition.
+\newblock Technical Report NA-92-08, August 1992.
+
+\bibitem{Gold3}
+C.~I. Goldstein.
+\newblock Multigrid methods for elliptic problems in unbounded domains.
+\newblock {\em SIAM J. Numer. Anal.}, 30:159--183, 1993.
+
+\end{thebibliography}

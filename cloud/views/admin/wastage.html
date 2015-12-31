@@ -1,0 +1,59 @@
+{{extend 'layout.html'}}
+{{from fractions import Fraction}}
+<style>
+table.fixed { table-layout:fixed; }
+table.fixed td { overflow: hidden; }
+</style>
+<h3>Resource wastage statistics</h3>
+{{if not data:}}
+    <center> No data available for vms</center>
+{{else:}}
+<div><p><b>Sorted by:</b> {{=sortby}}, <b>Time:</b> % running time over the given period</p></div>
+{{if sortby.find('cpu')>=0:}}
+    {{mysort='cpumax'}}
+{{elif sortby.find('ram')>=0:}}
+    {{mysort='rammax'}}
+{{else:}}
+    {{mysort=sortby+'max'}}
+{{pass}}
+  <table class="fixed">
+     <col>
+     <tr>
+	<th style="padding: .1em .5em; background-color:white; text-align:center"><a style="color:cyan">>75%</a>, <a style="color:yellowgreen">>25%</a>, <a style="color:lightsalmon">Remaining</a></th>
+	<th colspan="3" style="padding: .1em .5em; text-align:center">Daily</th>
+	<th colspan="3" style="padding: .1em .5em; text-align:center">Weekly</th>
+	<th colspan="3" style="padding: .1em .5em; text-align:center">Monthly</th>
+	<!--th colspan="3" style="padding: .1em .5em; text-align:center">Yearly</th-->
+    </tr>
+    <tr style="padding: .1em .5em">
+        <th style="padding: .1em .5em; text-align:center"><a href='{{=URL('wastage/vm/')}}'>VM Name</a></th>
+        <th style="padding: .1em .5em"><a href='{{=URL('wastage/dcpuf/')}}'>CPU</a></th>
+	<th style="padding: .1em .5em"><a href='{{=URL('wastage/dramf/')}}'>RAM</a></th>
+	<th style="padding: .1em .5em"><a href='{{=URL('wastage/dtime/')}}'>Time</a></th>
+        <th style="padding: .1em .5em"><a href='{{=URL('wastage/wcpuf/')}}'>CPU</a></th>
+	<th style="padding: .1em .5em"><a href='{{=URL('wastage/wramf/')}}'>RAM</a></th>
+	<th style="padding: .1em .5em"><a href='{{=URL('wastage/wtime/')}}'>Time</a></th>
+        <th style="padding: .1em .5em"><a href='{{=URL('wastage/mcpuf/')}}'>CPU</a></th>
+	<th style="padding: .1em .5em"><a href='{{=URL('wastage/mramf/')}}'>RAM</a></th>
+	<th style="padding: .1em .5em"><a href='{{=URL('wastage/mtime/')}}'>Time</a></th>
+        <!--th style="padding: .1em .5em"><a href='{{=URL('wastage/ycpuf/')}}'>CPU</a></th>
+	<th style="padding: .1em .5em"><a href='{{=URL('wastage/yramf/')}}'>RAM</a></th>
+	<th style="padding: .1em .5em"><a href='{{=URL('wastage/ytime/')}}'>Time</a></th-->
+     </tr>
+      {{for vm in data:}}
+	    <tr>
+         {{if(myfraction(vm[sortby])>.75):}}<td style='background-color:Cyan'>
+         {{else:}}
+	     {{if(myfraction(vm[sortby])>.25):}}<td style='background-color:YellowGreen'>
+	     {{else:}}<td style='background-color:LightSalmon'>
+	     {{pass}}
+         {{pass}}
+            <a href='{{=URL(c='vmuser',f='settings',args=vm['vm'])}}' style="color:#3C3D4E">{{=vm['vm']}}</a></td>
+	    <td style="text-align:right">{{=vm['dcpuf']}}</td><td style="text-align:right">{{=(vm['dramf']).split('.0')[0]}}</td><td style="text-align:right; border-right-width:4px; border-right-color:#C9C9C9">{{=vm['dtime']}}</td>
+	    <td style="text-align:right">{{=vm['wcpuf']}}</td><td style="text-align:right">{{=(vm['wramf']).split('.0')[0]}}</td><td style="text-align:right; border-right-width:4px; border-right-color:#C9C9C9">{{=vm['wtime']}}</td>
+	    <td style="text-align:right">{{=vm['mcpuf']}}</td><td style="text-align:right">{{=(vm['mramf']).split('.0')[0]}}</td><td style="text-align:right; border-right-width:4px; border-right-color:#C9C9C9">{{=vm['mtime']}}</td>
+	    <!--td style="text-align:right">{{=vm['ycpuf']}}</td><td style="text-align:right">{{=vm['yramf']}}</td><td style="text-align:right;">{{=vm['ytime']}}</td-->
+      </tr>	
+      {{pass}}
+    </table>
+{{pass}}

@@ -1,0 +1,7 @@
+{{extend 'layout.html'}}
+<h3>Approve Request</h3>
+{{if faculty==auth.user.username:}}
+{{faculty="you"}}
+{{pass}}
+<h4>{{=requestor.username}} has raised the request through {{=faculty}}.</h4>
+{{=form}}

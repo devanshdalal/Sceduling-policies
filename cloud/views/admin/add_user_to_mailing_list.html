@@ -1,0 +1,31 @@
+{{extend 'layout.html'}}
+<h4>Current Users</h4>
+{{if not users:}}
+No users yet.<br/>
+{{else:}}
+  <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>UserName</th>
+        <th>Email</th>
+        <th>Operations</th>
+      </tr>
+  {{for user in users:}}
+      <tr>
+        <td>{{=user['first_name']}}</td>
+        <td>{{=user['last_name']}}</td>
+        <td>{{=user['username']}}</td>
+        <td>{{=user['email']}}</td>
+        <td>
+            {{=A(IMG(_src=URL('static','images/on-off.png'), _height=15, _width=15),
+                    _href=URL(r=request, f='delete_user_from_mailing_list', args=[user['id']]), 
+                    _title="Delete the user from the database",
+                    _alt="Delete the user from the database")}}
+        </td>
+      </tr>
+    {{pass}}
+    <table>
+{{pass}}
+<h4>Add User to Mailing List</h4>
+{{=form}}

@@ -1,0 +1,3161 @@
+{
+    "date": "2014-06-26 18:41:02.935379", 
+    "info": [
+        "VM Level: 0->Shutdown, {1,2,3}->Running", 
+        "VM RAM & CPU shown are the max resources that VM can have. Level 1 means same, 2 means halfed resources, 3 means 1/4 resources. Minimum 1GB, 1CPU", 
+        "Host status defines if the host is being used. 1-> IN_USE, Others->IGNORE"
+    ], 
+    "host_data": [
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host1", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host10", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host11", 
+            "cpu": 16
+        }, 
+        {
+            "status": 2, 
+            "ram": 16, 
+            "name": "host12", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host13", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host14", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host15", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host16", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host2", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host21", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host22", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host23", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host24", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host25", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host26", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host27", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host28", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host29", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host3", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host30", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host31", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host32", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host33", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host34", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host35", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host36", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host4", 
+            "cpu": 16
+        }, 
+        {
+            "status": 2, 
+            "ram": 12, 
+            "name": "host42", 
+            "cpu": 8
+        }, 
+        {
+            "status": 1, 
+            "ram": 12, 
+            "name": "host43", 
+            "cpu": 8
+        }, 
+        {
+            "status": 1, 
+            "ram": 12, 
+            "name": "host46", 
+            "cpu": 8
+        }, 
+        {
+            "status": 1, 
+            "ram": 12, 
+            "name": "host47", 
+            "cpu": 8
+        }, 
+        {
+            "status": 0, 
+            "ram": 12, 
+            "name": "host49", 
+            "cpu": 8
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host5", 
+            "cpu": 16
+        }, 
+        {
+            "status": 2, 
+            "ram": 12, 
+            "name": "host50", 
+            "cpu": 8
+        }, 
+        {
+            "status": 1, 
+            "ram": 12, 
+            "name": "host51", 
+            "cpu": 8
+        }, 
+        {
+            "status": 2, 
+            "ram": 12, 
+            "name": "host52", 
+            "cpu": 8
+        }, 
+        {
+            "status": 1, 
+            "ram": 12, 
+            "name": "host53", 
+            "cpu": 8
+        }, 
+        {
+            "status": 1, 
+            "ram": 12, 
+            "name": "host54", 
+            "cpu": 8
+        }, 
+        {
+            "status": 1, 
+            "ram": 12, 
+            "name": "host55", 
+            "cpu": 8
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host6", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host7", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host8", 
+            "cpu": 16
+        }, 
+        {
+            "status": 1, 
+            "ram": 16, 
+            "name": "host9", 
+            "cpu": 16
+        }
+    ], 
+    "vm_data": [
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "2010eez8693", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "2011ASZ8159", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "2011EEZ8053", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "AMD310", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host30", 
+            "ram": 8192, 
+            "name": "AMIT_ILOG", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "AM_SFS_CHANNEL", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host46", 
+            "ram": 8192, 
+            "name": "ANUJ", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host9", 
+            "ram": 8192, 
+            "name": "AOL", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "ASL320_1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Activity_Recognition_KKB", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Ajeet_Helical_MD", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host29", 
+            "ram": 2048, 
+            "name": "Akumar-001", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "Akumar-002", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host35", 
+            "ram": 8192, 
+            "name": "AmitShrivastava", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Amit_CPLEX", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Amitsch1", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host55", 
+            "ram": 8192, 
+            "name": "Anchal0MTP", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Anilsawhney", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Anubhav_1982", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Anuj_FT", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "Anupam", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host8", 
+            "ram": 8192, 
+            "name": "Anurag_Goyal", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Anurag_Goyal2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Anurag_Goyal3", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Anurag_Goyal4", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host13", 
+            "ram": 8192, 
+            "name": "Anurag_Goyal5", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "AshishVM", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "BHARDWAJ", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "BIMCLOUD", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "BMANNA", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "BPPatel", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host7", 
+            "ram": 8192, 
+            "name": "BPRADEEP", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "BTP", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host3", 
+            "ram": 2048, 
+            "name": "BTP_2", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Ballistic", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "BijenderSingh", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Biometrics", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host14", 
+            "ram": 2048, 
+            "name": "Bishwa_Civil", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "BluetoothSytem", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host21", 
+            "ram": 2048, 
+            "name": "CHANDNISHARMA", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "CNTMedeA_VASP", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "CNTmedeA", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "CRITI", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "CSL730", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "CSL730VM2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host8", 
+            "ram": 2048, 
+            "name": "Charu_lab", 
+            "level": 1, 
+            "cpu": 12
+        }, 
+        {
+            "host": "host2", 
+            "ram": 2048, 
+            "name": "Charu_lab1", 
+            "level": 1, 
+            "cpu": 12
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Clustering", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host21", 
+            "ram": 8192, 
+            "name": "Compuations", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "DALJIT_KAUR", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host54", 
+            "ram": 8192, 
+            "name": "DD_Virtual", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host30", 
+            "ram": 4096, 
+            "name": "DF", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "DSL_SANTOSH2", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host3", 
+            "ram": 1024, 
+            "name": "DSSC", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "DW608", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host29", 
+            "ram": 4096, 
+            "name": "Datum", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Deepesh", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Delhi2012", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host22", 
+            "ram": 4096, 
+            "name": "Dell_MM", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Devendra", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host2", 
+            "ram": 4096, 
+            "name": "Dileep", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host25", 
+            "ram": 1024, 
+            "name": "Divya", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host14", 
+            "ram": 8192, 
+            "name": "Divya2", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host34", 
+            "ram": 6144, 
+            "name": "Dushyant", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "DynamicAnalysis", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host9", 
+            "ram": 8192, 
+            "name": "EPD411SH", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Elaine", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host21", 
+            "ram": 8192, 
+            "name": "FEM", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host4", 
+            "ram": 8196, 
+            "name": "FIHT", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host49", 
+            "ram": 8192, 
+            "name": "FIHT2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 14336, 
+            "name": "FloSolv", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host3", 
+            "ram": 8192, 
+            "name": "Flory", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host14", 
+            "ram": 4096, 
+            "name": "GVRAMANA_CIVIL", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host14", 
+            "ram": 8192, 
+            "name": "Ganga1", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host10", 
+            "ram": 12288, 
+            "name": "Gangaji", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host34", 
+            "ram": 4096, 
+            "name": "Gokul", 
+            "level": 1, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host4", 
+            "ram": 4096, 
+            "name": "Gokul2", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Gosain_VM", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Gosain_VM1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Gosain_VM2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Gosain_VM3", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "HampiLS1", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "HampiLS2", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host31", 
+            "ram": 1024, 
+            "name": "Hari", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host27", 
+            "ram": 4096, 
+            "name": "Human_activity_recognition_VM", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "IawareCliques", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host36", 
+            "ram": 8192, 
+            "name": "InNSlab", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "IncrementalRFexperiments", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host6", 
+            "ram": 8192, 
+            "name": "IncrementalTrainingRF", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Jaskaransingh", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host13", 
+            "ram": 8192, 
+            "name": "Jayakrishnan", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host4", 
+            "ram": 4096, 
+            "name": "Jet_CFD", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "KANWAL", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "KDVirtual", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "KMedianClustering", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "KSGraphs", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "KSGraphs1", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Kamaless", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Kapuria", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Karan_Kohli", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Kausar", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host23", 
+            "ram": 8192, 
+            "name": "Kaushik", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host28", 
+            "ram": 8192, 
+            "name": "Kuldeep", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Kunal", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host25", 
+            "ram": 8192, 
+            "name": "Kunal2", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LDKL", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LDKL_1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LDKL_2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "LDKL_3", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LDKL_Tree", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LDKL_Tree_new", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host13", 
+            "ram": 8192, 
+            "name": "LES_NEW_RABIJIT", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LES_PLUME", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host13", 
+            "ram": 8192, 
+            "name": "LES_Rabijit", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LTE", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LTESimv1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LTE_Sim", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host22", 
+            "ram": 8192, 
+            "name": "Lalita", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "LargeScaleReconstruction", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "MDComputation", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "MDComputation2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "MDComutaion3", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "MINIPROJECT", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 6144, 
+            "name": "MKL", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 14336, 
+            "name": "MKL2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 14336, 
+            "name": "MKL3", 
+            "level": 0, 
+            "cpu": 6
+        }, 
+        {
+            "host": "host1", 
+            "ram": 14000, 
+            "name": "MKL4", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "MKL5", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host23", 
+            "ram": 8192, 
+            "name": "MLN_Machine", 
+            "level": 1, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "MODFLOW", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host6", 
+            "ram": 1024, 
+            "name": "Madhulika", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host13", 
+            "ram": 4096, 
+            "name": "Magrathea", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host34", 
+            "ram": 8192, 
+            "name": "MappingMachine", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "MeenakshiSihag", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host22", 
+            "ram": 2048, 
+            "name": "MeenuGupta", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host21", 
+            "ram": 8192, 
+            "name": "Mili", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "MoodleTest", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "MultiLabel", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "MultiLabelNIPS", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "MultiLabelStructured", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Multiphase_CFD", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "NB_STRESS", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host10", 
+            "ram": 8192, 
+            "name": "NEETU_KUMARI", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host21", 
+            "ram": 2048, 
+            "name": "NEHAKUMARI", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "NS598", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 3000, 
+            "name": "Narayanan", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host25", 
+            "ram": 8192, 
+            "name": "News", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host27", 
+            "ram": 8192, 
+            "name": "NidhiKaur", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host29", 
+            "ram": 4096, 
+            "name": "OptimizePack", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host34", 
+            "ram": 8192, 
+            "name": "PANS", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host16", 
+            "ram": 8192, 
+            "name": "PCAtlas", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "PCSEKHAR", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host5", 
+            "ram": 4096, 
+            "name": "Pankaj_Cable", 
+            "level": 1, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host15", 
+            "ram": 8192, 
+            "name": "Pankaj_Cable_2", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host8", 
+            "ram": 8192, 
+            "name": "Pankaj_Cable_4", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "ParClustering", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "ParuBTP", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host16", 
+            "ram": 8192, 
+            "name": "Pervaporation", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 4096, 
+            "name": "Pervaporation1", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Phoebus", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Pradeep", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Pratish", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host43", 
+            "ram": 8192, 
+            "name": "Preeti", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Prim_SCCM", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host11", 
+            "ram": 8192, 
+            "name": "Pritanshu", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host15", 
+            "ram": 8192, 
+            "name": "RAHULGARG", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host29", 
+            "ram": 8192, 
+            "name": "RBahl-001", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "R_Forest", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Ragi", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Rahul", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Rahul_Rishabh", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host34", 
+            "ram": 8192, 
+            "name": "Raktim", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "RandomForest", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Rashi", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host16", 
+            "ram": 8192, 
+            "name": "Rathore", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "Rathore001", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 14336, 
+            "name": "RayTrace", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host21", 
+            "ram": 8192, 
+            "name": "Rinku", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host22", 
+            "ram": 8192, 
+            "name": "SADDAM", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host55", 
+            "ram": 8192, 
+            "name": "SAKET_VERMA", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "SCCM_DATABASE", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host26", 
+            "ram": 8192, 
+            "name": "SUBASH", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Sabyasachi", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "SakaiTesting", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host47", 
+            "ram": 8192, 
+            "name": "Sangram_95", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Sanjit", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Sankalp_BTP", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host25", 
+            "ram": 8192, 
+            "name": "Savi_Meena", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host29", 
+            "ram": 1024, 
+            "name": "Sentimental", 
+            "level": 1, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Shakya", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "Shilpi", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Skylab", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Skylab_Bhore", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host32", 
+            "ram": 8192, 
+            "name": "Sourabh", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host14", 
+            "ram": 2048, 
+            "name": "Subject_retreival", 
+            "level": 1, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host27", 
+            "ram": 8192, 
+            "name": "Sudhir_bisen", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host25", 
+            "ram": 8192, 
+            "name": "Surbhi", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host22", 
+            "ram": 2048, 
+            "name": "Sushobhith", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "TANMOY", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host31", 
+            "ram": 8192, 
+            "name": "TANMOYP", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "TK", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Tapas", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "TejasHost", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host35", 
+            "ram": 2048, 
+            "name": "Test", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Test1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Tiru", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host14", 
+            "ram": 8192, 
+            "name": "Tiru28026", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host16", 
+            "ram": 8192, 
+            "name": "Tiru3d", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Tiru8", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "Tiru8026", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "Tweeter", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "VBHARDWAJ", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "VIVEK", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "VM4", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "VMOcean", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host34", 
+            "ram": 8192, 
+            "name": "VMRajesh", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "VideoProcessing", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host30", 
+            "ram": 8192, 
+            "name": "VijayDua", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "VijayYadav", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host34", 
+            "ram": 8192, 
+            "name": "Vipulpatel", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host11", 
+            "ram": 8192, 
+            "name": "Vishaldust", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host5", 
+            "ram": 8192, 
+            "name": "WINComputation", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "activecontrol", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host5", 
+            "ram": 8192, 
+            "name": "ajaysood", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "akash", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "akshukla", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "ame113619", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "ame113699", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host7", 
+            "ram": 14336, 
+            "name": "amit", 
+            "level": 1, 
+            "cpu": 12
+        }, 
+        {
+            "host": "host7", 
+            "ram": 2048, 
+            "name": "ankith", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host23", 
+            "ram": 8192, 
+            "name": "ankur", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "ankur1", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host4", 
+            "ram": 4096, 
+            "name": "aparnakanth", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "apoorvavm", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "apurvVM", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host27", 
+            "ram": 8192, 
+            "name": "array", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host21", 
+            "ram": 8192, 
+            "name": "arun_statphys3", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "arun_statphys_1", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host14", 
+            "ram": 1024, 
+            "name": "arun_statphys_2", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "asood", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "ateeque", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host15", 
+            "ram": 8192, 
+            "name": "ateeque3302", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "baadal", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "badalmanoj", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host2", 
+            "ram": 4096, 
+            "name": "bench", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host2", 
+            "ram": 4096, 
+            "name": "bench2", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host27", 
+            "ram": 4096, 
+            "name": "bench3", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "bhimjeev1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "bishnoi", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "boson1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "brajesh777", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host10", 
+            "ram": 2048, 
+            "name": "brajesh999", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "btp_simulation", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host15", 
+            "ram": 8192, 
+            "name": "bustransit", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host9", 
+            "ram": 8192, 
+            "name": "bwb", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 12288, 
+            "name": "bwb_2", 
+            "level": 0, 
+            "cpu": 12
+        }, 
+        {
+            "host": "host27", 
+            "ram": 8192, 
+            "name": "charu", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host15", 
+            "ram": 4096, 
+            "name": "charu_clone", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host36", 
+            "ram": 8192, 
+            "name": "charubig1", 
+            "level": 1, 
+            "cpu": 12
+        }, 
+        {
+            "host": "host29", 
+            "ram": 8192, 
+            "name": "charubig2", 
+            "level": 1, 
+            "cpu": 12
+        }, 
+        {
+            "host": "host10", 
+            "ram": 1024, 
+            "name": "charutest", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "critimahajan", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host11", 
+            "ram": 8192, 
+            "name": "csl730_cs5090238", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "csl730_m1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "csl730_m2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "cyz128146", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "danish", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host16", 
+            "ram": 8192, 
+            "name": "debu", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host53", 
+            "ram": 8192, 
+            "name": "debu2", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "dev", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "devchakradhari123", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host22", 
+            "ram": 8192, 
+            "name": "dipak_nehete", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "eet102556", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "engine_fluent", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "fiht3", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host36", 
+            "ram": 8192, 
+            "name": "firdaus", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "gopaltestwin", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "gopaltestwin2", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host32", 
+            "ram": 8192, 
+            "name": "hari2", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "hema", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "hemantchouhan", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "hirani", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host13", 
+            "ram": 8192, 
+            "name": "hirani01", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "hirani02", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "hirani03", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host25", 
+            "ram": 8192, 
+            "name": "hirani1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "hirani2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host10", 
+            "ram": 8192, 
+            "name": "iceberg1", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host16", 
+            "ram": 8192, 
+            "name": "iceberg2", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host29", 
+            "ram": 8192, 
+            "name": "iceberg3", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host21", 
+            "ram": 8192, 
+            "name": "indrauzz", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host26", 
+            "ram": 2048, 
+            "name": "insulin_simulation", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host9", 
+            "ram": 2048, 
+            "name": "insulin_simulation2", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "jaeka2", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "janeka", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "janeka1", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "jasleen", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "jaspreet", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host6", 
+            "ram": 2048, 
+            "name": "jatintest2", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host21", 
+            "ram": 1024, 
+            "name": "jatintest3", 
+            "level": 1, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "josecijo", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "jphirani", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "kavitagoyal", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host11", 
+            "ram": 8192, 
+            "name": "kp_ces", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "kramer", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host21", 
+            "ram": 2048, 
+            "name": "kumari", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host24", 
+            "ram": 8192, 
+            "name": "les_rajesh", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host24", 
+            "ram": 1024, 
+            "name": "libvirt_development", 
+            "level": 1, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host10", 
+            "ram": 2048, 
+            "name": "likeminded", 
+            "level": 1, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "likeminded1", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host33", 
+            "ram": 8192, 
+            "name": "madhu", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "manish", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host36", 
+            "ram": 8192, 
+            "name": "manish_shaurya", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host4", 
+            "ram": 2048, 
+            "name": "manjunath", 
+            "level": 1, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "manu", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "maptesting", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "met103018", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host6", 
+            "ram": 8192, 
+            "name": "met122890", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host51", 
+            "ram": 8000, 
+            "name": "mez108773", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "mez118112", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "mlrf", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "mmohan", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host2", 
+            "ram": 4096, 
+            "name": "mssccm", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "nano_sk", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host34", 
+            "ram": 8192, 
+            "name": "nanomag", 
+            "level": 3, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "nasir_vm", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "neeraj", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "neeraj_10", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "neeraj_7", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "neeraj_8", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "neeraj_9", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "neeraj_pratyush", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "neetu", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "network_trafffic", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "newton", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host54", 
+            "ram": 8192, 
+            "name": "nidhi", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host9", 
+            "ram": 8192, 
+            "name": "nidhik", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host30", 
+            "ram": 2048, 
+            "name": "nodeRM", 
+            "level": 2, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "ojasvi", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "pandya", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host29", 
+            "ram": 4096, 
+            "name": "pankaj_Cable_3", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host2", 
+            "ram": 1024, 
+            "name": "paravirtual_device_testing", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "pawan", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8196, 
+            "name": "performance-benchmarking", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "phptrial", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host55", 
+            "ram": 8192, 
+            "name": "plasmonics", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "pragya", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host3", 
+            "ram": 8000, 
+            "name": "prem", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "priavm", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host10", 
+            "ram": 8192, 
+            "name": "pritanshu1", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "priyanka", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "priyanka_vm1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 2048, 
+            "name": "priyanka_vm11", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host2", 
+            "ram": 2048, 
+            "name": "priyanka_vm15", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 2048, 
+            "name": "priyanka_vm16", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 2048, 
+            "name": "priyanka_vm17", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host2", 
+            "ram": 4096, 
+            "name": "priyanka_vm2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 3072, 
+            "name": "priyanka_vm5", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "priyanka_vm6", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host31", 
+            "ram": 4096, 
+            "name": "project_btp", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host15", 
+            "ram": 8192, 
+            "name": "rahulg", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "reKonf", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 8192, 
+            "name": "recommender", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "sandeepchandraker", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host31", 
+            "ram": 1024, 
+            "name": "saurav", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host24", 
+            "ram": 8192, 
+            "name": "saurav2", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host5", 
+            "ram": 2048, 
+            "name": "shadrack", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "shadrack2", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "shashank1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "shashank2", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "shashank4", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "shashank5", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "shashank_assembler", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "shikhar", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "shivnetra", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host24", 
+            "ram": 8192, 
+            "name": "shri17", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 1024, 
+            "name": "shubham", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "sindhu", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "skdash", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "smartprix", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "smrutirekha", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "sowmya", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host3", 
+            "ram": 4096, 
+            "name": "spel-baadal", 
+            "level": 1, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host32", 
+            "ram": 12288, 
+            "name": "spel-baadal-2", 
+            "level": 3, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host10", 
+            "ram": 8192, 
+            "name": "spel_baadal_3", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "spelbaadal3", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "ssidana", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 2048, 
+            "name": "subject_retrieval_clone", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "sudeep", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "sudeep2", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host28", 
+            "ram": 2048, 
+            "name": "sudip", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host33", 
+            "ram": 2048, 
+            "name": "sudip2", 
+            "level": 1, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "summit", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "summit_nit", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "swatisidana", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "testpj", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host15", 
+            "ram": 8192, 
+            "name": "tiru1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host2", 
+            "ram": 1024, 
+            "name": "ubuntu12", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host32", 
+            "ram": 8192, 
+            "name": "udayraj", 
+            "level": 2, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "ugsection", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "varunloomba", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "vidit", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "vijay", 
+            "level": 0, 
+            "cpu": 2
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "vijay28", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "vinayaklte", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "vinayaklte1", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host15", 
+            "ram": 8192, 
+            "name": "vishvendrapratapsingh", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "vkp_me", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 8192, 
+            "name": "vkpsm007", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 1024, 
+            "name": "webservertrial", 
+            "level": 0, 
+            "cpu": 1
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "wings", 
+            "level": 0, 
+            "cpu": 8
+        }, 
+        {
+            "host": "host1", 
+            "ram": 4096, 
+            "name": "xyz", 
+            "level": 0, 
+            "cpu": 4
+        }, 
+        {
+            "host": "host14", 
+            "ram": 8192, 
+            "name": "zaved", 
+            "level": 1, 
+            "cpu": 8
+        }
+    ]
+}

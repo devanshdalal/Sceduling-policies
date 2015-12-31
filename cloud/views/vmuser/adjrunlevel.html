@@ -1,0 +1,47 @@
+{{extend 'layout.html'}}
+{{if not vm:}}
+  <center>No VM running</center>
+{{else:}}
+  <p> Your VM {{=vm['name']}} is currently on runlevel {{=vm['runlevel']}}</p>
+  <p> Total cost till date is {{=vm['totalcost']}}.<p>
+  <table>
+      <tr>
+        <th>Level Resources</th>
+      	<th>Change to</th>
+      </tr>
+      <tr>
+      	<td>Gold (1:1)</td>
+        {{if vm['runlevel']=="1":}}
+            <td>ONE</td>
+        {{else:}}
+        <td>  {{=A("ONE",_href=URL(r=request, f='changelevel', args=[vm['name'],1]),
+                _title="Change to level 1",
+                _alt="Change to level 1")}}
+        </td>
+        {{pass}}
+      </tr>
+      <tr>
+      	<td>Silver (2:1)</td>
+        {{if vm['runlevel']=="2":}}
+            <td>TWO</td>
+        {{else:}}
+        <td>  {{=A("TWO",_href=URL(r=request, f='changelevel', args=[vm['name'],2]),
+                _title="Change to level 2",
+                _alt="Change to level 2")}}
+        </td>
+        {{pass}}
+      </tr>
+      <tr>
+      	<td>Bronze (4:1)</td>
+        {{if vm['runlevel']=="3":}}
+            <td>THREE</td>
+        {{else:}}
+        <td>  {{=A("THREE",_href=URL(r=request, f='changelevel', args=[vm['name'],3]),
+                _title="Change to level 3",
+                _alt="Change to level 3")}}
+        </td>
+        {{pass}}
+      </tr>
+</table>
+<h3>SAVE ENERGY SAVE MONEY.</h3>
+{{pass}}

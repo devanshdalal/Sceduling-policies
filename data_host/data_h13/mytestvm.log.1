@@ -1,0 +1,4 @@
+2011-11-08 17:25:18.083: starting up
+LC_ALL=C PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin QEMU_AUDIO_DRV=none /usr/bin/kvm -S -M pc-0.14 -enable-kvm -m 2048 -smp 2,sockets=2,cores=1,threads=1 -name mytestvm -uuid 5fcdd523-4039-81c2-22d3-7b031a5db451 -nodefconfig -nodefaults -chardev socket,id=charmonitor,path=/var/lib/libvirt/qemu/mytestvm.monitor,server,nowait -mon chardev=charmonitor,id=monitor,mode=readline -rtc base=utc -boot c -drive file=/vms/ds_kvm1/suban27/suban27.qcow2,if=none,id=drive-ide0-0-0,format=raw -device ide-drive,bus=ide.0,unit=0,drive=drive-ide0-0-0,id=ide0-0-0 -netdev tap,fd=19,id=hostnet0 -device rtl8139,netdev=hostnet0,id=net0,mac=54:52:00:00:00:93,bus=pci.0,addr=0x3 -chardev pty,id=charserial0 -device isa-serial,chardev=charserial0,id=serial0 -usb -vnc 0.0.0.0:93,password -vga cirrus -device virtio-balloon-pci,id=balloon0,bus=pci.0,addr=0x4
+char device redirected to /dev/pts/8
+2011-11-08 18:29:21.266: shutting down

@@ -1,0 +1,82 @@
+{{extend 'layout.html'}}
+{{
+  if not pending:
+}}
+  <center><h4>No Pending Tasks</h4></center>
+{{else:}}
+  <h4>Pending Tasks</h4>
+  <table>
+      <tr>
+        <th>Task</th>
+        <th>VM</th>
+        <th>User</th>
+        <th>Req Time</th>
+        <th>Fin Time</th>
+      </tr>
+      {{for task in pending:}}
+      <tr>
+        <td>{{=task['task']}}</td>
+        <td>{{=task['vm'].name}}</td>
+        <td>{{=fullname(task['user'].username)}}</td>
+        <td>{{=task['rtime']}}</td>
+        <td>{{=task['ftime']}}</td>
+      </tr>
+{{pass}}
+</table>
+{{pass}}
+
+{{
+  if not success:
+}}
+  <center><h4>No Completed Tasks</h4></center>
+{{else:}}
+  <h4>Completed Tasks</h4>
+  <table>
+      <tr>
+        <th>Task</th>
+        <th>VM</th>
+        <th>User</th>
+        <th>Req Time</th>
+        <th>Fin Time</th>
+      </tr>
+      {{for task in success:}}
+      <tr>
+        <td>{{=task['task']}}</td>
+        <td>{{=task['vm'].name}}</td>
+        <td>{{=fullname(task['user'].username)}}</td>
+        <td>{{=task['rtime']}}</td>
+        <td>{{=task['ftime']}}</td>
+      </tr>
+{{pass}}
+</table>
+{{pass}}
+
+{{
+  if not failed:
+}}
+  <center><h4>No Failed Tasks</h4></center>
+{{else:}}
+  <h4>Failed Tasks</h4>
+  <table>
+      <tr>
+        <th>Task</th>
+        <th>VM</th>
+        <th>User</th>
+        <th>Debug Info</th>
+        <th>Req Time</th>
+        <th>Fin Time</th>
+        <th>Action</th>
+      </tr>
+      {{for task in failed:}}
+      <tr>
+        <td>{{=task['task']}}</td>
+        <td>{{=task['vm'].name}}</td>
+        <td>{{=fullname(task['user'].username)}}</td>
+        <td>{{=task['comments']}}</td>
+        <td>{{=task['rtime']}}</td>
+        <td>{{=task['ftime']}}</td>
+        <td><a href="{{=URL(request.application,'vmuser','add_task',args=[task['id']])}}">TRY AGAIN</a> | <a href="{{=URL(request.application,'vmuser','ignore_task',args=[task['id']])}}">IGNORE</a></td>
+      </tr>
+{{pass}}
+</table>
+{{pass}}

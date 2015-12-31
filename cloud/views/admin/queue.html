@@ -1,0 +1,124 @@
+{{extend 'layout.html'}}
+<script>
+function clicker(content){
+        var thediv=document.getElementById("error"+content.toString());
+        if(thediv.style.display == "none"){
+                thediv.style.display = "";
+                thediv.innerHTML = "<span id=\"overlayblock\"><div style=\"color:cyan;font-weight:bold;font-size-adjust:1;font-family:monospace;\">"+document.getElementById("errorcontent"+content.toString()).innerHTML+"</div></br></br></br><a href='#' onclick='return clicker("+content+");'>CLOSE WINDOW</a></span>";
+        }else{
+                thediv.style.display = "none";
+                thediv.innerHTML = '';
+        }
+        return false;
+}
+</script>
+<form action="queue" method="GET">
+	Search tasks by VM Name <input name="vmname"></input>
+	<input type="submit"/>
+</form>
+{{
+  counter=0;
+  if not pending:
+}}
+<center><h4>No Pending Tasks</h4></center>
+{{else:}}
+  <h4>Pending Tasks</h4>
+  <table>
+      <tr>
+        <th>Task</th>
+        <th>VM</th>
+        <th>User</th>
+        <th>Request Time</th>
+        <th>Final Time</th>
+      </tr>
+{{for i,task in enumerate(pending):}}
+{{if i==items_per_page: break}}
+      <tr>
+        <td>{{=task['task']}}</td>
+        <td>{{if (task['vm'] != None):}}{{=task['vm'].name}}{{pass}}</td>
+        <td>{{=fullname(task['user'].username)}}</td>
+        <td>{{=task['rtime']}}</td>
+        <td>{{=task['ftime']}}</td>
+      </tr>
+{{pass}}
+</table>
+{{if page_p:}}
+<a href="?p={{=page_p-1}}">previous</a>
+{{pass}}
+{{if len(pending)>items_per_page:}}
+<a href="?p={{=page_p+1}}">next</a>
+{{pass}}
+{{pass}}
+
+{{
+  if not success:
+}}
+  <center><h4>No Completed Tasks</h4></center>
+{{else:}}
+  <h4>Completed Tasks</h4>
+  <table>
+      <tr>
+        <th>Task</th>
+        <th>VM</th>
+        <th>User</th>
+        <th>Request Time</th>
+        <th>Final Time</th>
+      </tr>
+{{for i,task in enumerate(success):}}
+{{if i==items_per_page: break}}
+      <tr>
+        <td>{{=task['task']}}</td>
+        <td>{{=task['vm'].name}}</td>
+        <td>{{=fullname(task['user'].username)}}</td>
+        <td>{{=task['rtime']}}</td>
+        <td>{{=task['ftime']}}</td>
+      </tr>
+{{pass}}
+</table>
+{{if page_s:}}
+<a href="?s={{=page_s-1}}">Previous</a>
+{{pass}}
+{{if len(success)>items_per_page:}}
+<a href="?s={{=page_s+1}}">Next</a>
+{{pass}}
+
+{{pass}}
+
+{{
+  if not failed:
+}}
+  <center><h4>No Failed Tasks</h4></center>
+{{else:}}
+  <h4>Failed Tasks</h4>
+  <table>
+      <tr>
+        <th>Task</th>
+        <th>VM</th>
+        <th>User</th>
+        <th>Debug Info</th>
+        <th>Request Time</th>
+        <th>Final Time</th>
+        <th>Action</th>
+      </tr>
+{{for i,task in enumerate(failed):}}
+{{if i==items_per_page: break}}
+      <tr>
+        <td>{{=task['task']}}</td>
+        <td>{{if (task['vm'] != None):}}{{=task['vm'].name}}{{pass}}</td>
+        <td>{{=fullname(task['user'].username)}}</td>
+        <div id="errorcontent{{=str(counter)}}" style="display:none;">{{=task['comments']}}</div>
+        <td><div id="error{{=str(counter)}}" style="display: none;"></div><a href='#' onclick='return clicker("{{=counter}}");'>Error</a></td>
+        <td>{{=task['rtime']}}</td>
+        <td>{{=task['ftime']}}</td>
+        <td><a href="{{=URL(request.application,'vmuser','add_task',args=[task['id']])}}">TRY AGAIN</a> | <a href="{{=URL(request.application,'admin','ignore_task',args=[task['id']])}}">IGNORE</a></td>
+      </tr>
+        {{counter=counter+1}}
+{{pass}}
+</table>
+{{if page_f:}}
+<a href="?f={{=page_f-1}}">Previous</a>
+{{pass}}
+{{if len(failed)>items_per_page:}}
+<a href="?f={{=page_f+1}}">Next</a>
+{{pass}}
+{{pass}}
