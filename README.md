@@ -72,12 +72,12 @@ Title: 'Scheduling policies for Baadal - the IITD cloud'
 Authors:
 - Nishant Kumar
 - Devansh Dalal <br>
-...
+
 
 ## Credits
 ----------------
 [Devansh Dalal](https://github.com/devanshdalal) <br>
-[Nishant Kumar](https://github.com/nish_kr) <br>
+[Nishant Kumar](https://github.com/nish-kr) <br>
 
 
 ### Screenshots
