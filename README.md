@@ -1,4 +1,4 @@
-### Scheduling Policies
+# Scheduling Policies
 ==============================
 
 Baadal is the IIT Delhi academic cloud on which Virtual Machines (VMs)
@@ -7,7 +7,7 @@ VMs on the Physical Machines (PMs). Our current work focusses on
 improving the scheduling capacity for Baadal. We then provide analysis
 of a simulation we used in evaluating the different strategies.
 
-### Currently implemented Strategy
+## Currently implemented Strategy
 ==============================
 When a new request for a Virtual Machine comes in, it has associated
 with it the parameters - CPU (cores needed) and RAM. It is then placed
@@ -18,7 +18,7 @@ total RAM.
 When the user changes the level of a VM and restarts it, it is placed
 again in a new host following the same strategy as above.
 
-### Improvements
+## Improvements
 ============
 1.  <span> It can be proven that online first fit for 2-dimentional
     packing is O(d)-competitive and will not use more than 2.7 times the
@@ -40,7 +40,7 @@ again in a new host following the same strategy as above.
     Vms to the input list and continuing the loop uptill 2 or three
     levels. </span>
 
-Analysis
+## Analysis
 ========
 -   <span>For comparing various strategies we generate a list of queries
     for the simulation, where a query can be a request for a new Vm ,
@@ -68,19 +68,19 @@ Analysis
 
 
 ------
-Title: 'Scheduling policies for Baadal - the IITD cloud'
+## Title: 'Scheduling policies for Baadal - the IITD cloud'
 Authors:
 - Nishant Kumar
 - Devansh Dalal <br>
 
 
-## Credits
+# Credits
 ----------------
 [Devansh Dalal](https://github.com/devanshdalal) <br>
 [Nishant Kumar](https://github.com/nish-kr) <br>
 
 
-### Screenshots
+# Screenshots
 ----------------
 ![s](https://cloud.githubusercontent.com/assets/5080310/13222407/c69910f6-d9a5-11e5-902a-1195cfb6ab62.png)
 ----------------
